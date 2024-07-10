@@ -16,7 +16,7 @@ What's the version that you have?
 
 **Answer:** 2.14.1
 
-<img src="./solution/images/q1.png" alt="mlflow_version" width="600"/>
+<img src="./solution/images/q1.png" alt="mlflow_version"/>
 
 ## Q2. Download and preprocess the data
 
@@ -47,8 +47,9 @@ How many files were saved to `OUTPUT_FOLDER`?
 * 4
 * 7
 
-**Anser:** 4
-<img src="./solution/images/q2.png" alt="mlflow_version" width="500"/>
+**Answer:** 4
+
+<img src="./solution/images/q2.png" alt="mlflow_version"/>
 
 ## Q3. Train a model with autolog
 
@@ -76,7 +77,8 @@ What is the value of the `min_samples_split` parameter:
 * 10
 
 **Answer:** 2
-<img src="./solution/images/q3.png" alt="mlflow_version" width="500"/>
+
+<img src="./solution/images/q3.png" alt="mlflow_version"/>
 
 ## Q4. Launch the tracking server locally
 
@@ -122,7 +124,8 @@ What's the best validation RMSE that you got?
 * 6.336
 
 **Answer:** 5.335(nearest) and got 5.370 in my local
-<img src="./solution/images/q5.png" alt="mlflow_version" width="500"/>
+
+<img src="./solution/images/q5.png" alt="mlflow_version"/>
 
 ## Q6. Promote the best model to the model registry
 
@@ -144,7 +147,8 @@ What is the test RMSE of the best model?
 * 6.568
 
 **Answer:** 5.567(nearest) and got 5.370 in my local
-<img src="./solution/images/q6.png" alt="mlflow_version" width="500"/>
+
+<img src="./solution/images/q6.png" alt="mlflow_version"/>
 
 ## Submit the results
 
