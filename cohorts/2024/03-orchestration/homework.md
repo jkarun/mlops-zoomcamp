@@ -14,6 +14,10 @@ What's the version of Mage we run?
 
 (You can see it in the UI)
 
+**Answer:** v0.9.72
+
+<img src="./images/3q1.png" alt=""/>
+
 
 ## Question 2. Creating a project
 
@@ -25,6 +29,11 @@ How many lines are in the created `metadata.yaml` file?
 - 45
 - 55
 - 65
+
+**Answer:** 55
+
+<img src="./images/3q2.png" alt=""/>
+
 
 ## Question 3. Creating a pipeline
 
@@ -39,6 +48,10 @@ How many records did we load?
 - 3,403,766
 - 3,603,766
 
+**Answer:** 3,403,766
+
+<img src="./images/3q3.png" alt=""/>
+
 ## Question 4. Data preparation
 
 
@@ -50,18 +63,7 @@ This is what we used (adjusted for yellow dataset):
 def read_dataframe(filename):
     df = pd.read_parquet(filename)
 
-    df.tpep_dropoff_datetime = pd.to_datetime(df.tpep_dropoff_datetime)
-    df.tpep_pickup_datetime = pd.to_datetime(df.tpep_pickup_datetime)
-
-    df['duration'] = df.tpep_dropoff_datetime - df.tpep_pickup_datetime
-    df.duration = df.duration.dt.total_seconds() / 60
-
-    df = df[(df.duration >= 1) & (df.duration <= 60)]
-
-    categorical = ['PULocationID', 'DOLocationID']
-    df[categorical] = df[categorical].astype(str)
-    
-    return df
+    a1
 ```
 
 Let's adjust it and apply to the data we loaded in question 3. 
@@ -73,6 +75,9 @@ What's the size of the result?
 - 3,103,766
 - 3,316,216 
 - 3,503,766
+
+**Answer:** 3,316,216
+<img src="./images/3q4.png" alt=""/>
 
 ## Question 5. Train a model
 
@@ -92,6 +97,11 @@ Hint: print the `intercept_` field in the code block
 - 24.77
 - 27.77
 - 31.77
+
+**Answer:** 24.77
+
+<img src="./images/3q5.png" alt=""/>
+
 
 ## Question 6. Register the model 
 
@@ -130,7 +140,7 @@ And add it to the docker-compose.yaml:
     ports:
       - "5000:5000"
     volumes:
-      - "${PWD}/mlflow:/home/mlflow/"
+      - "${PWD}\mlflow:/home/mlflow/"
     networks:
       - app-network
 ```
@@ -156,16 +166,14 @@ Find the logged model, and find MLModel file. What's the size of the model? (`mo
 * 4,534
 * 1,534
 
+**Answer:** 4,534
+
 > Note: typically we do last two steps in one code block.
+
+<img src="./images/3q6.png" alt=""/>
 
 
 ## Submit the results
 
 * Submit your results here: https://courses.datatalks.club/mlops-zoomcamp-2024/homework/hw3
 * If your answer doesn't match options exactly, select the closest one.
-
-
-
-
-
-
