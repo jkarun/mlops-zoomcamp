@@ -1,6 +1,6 @@
 import os
 
-import model
+import test.model as model
 
 PREDICTIONS_STREAM_NAME = os.getenv('PREDICTIONS_STREAM_NAME', 'ride_predictions')
 RUN_ID = os.getenv('RUN_ID')

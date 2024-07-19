@@ -31,6 +31,11 @@ filesystem. E.g. here:
 output_file = f'taxi_type=yellow_year={year:04d}_month={month:02d}.parquet'
 ```
 
+**Answer:** `if __name__ == '__main__'`
+
+<img src="./images/6q1.png">
+
+
 ## Q2. Installing pytest
 
 Now we need to install `pytest`:
@@ -46,6 +51,11 @@ What should be the other file?
 
 Hint: to be able to test `batch.py`, we need to be able to
 import it. Without this other file, we won't be able to do it.
+
+
+**Answer:** `__init__.py`
+
+<img src='./images/6q2.png'>
 
 
 ## Q3. Writing first unit test
@@ -101,6 +111,11 @@ How many rows should be there in the expected dataframe?
 * 4
 
 
+**Answer:** 2
+
+<img src="./images/6q3.png">
+
+
 ## Q4. Mocking S3 with Localstack 
 
 Now let's prepare for an integration test. In our script, we 
@@ -131,6 +146,10 @@ In both cases we should adjust commands for localstack. What option do we need t
 * `--profile`
 * `--endpoint-url`
 * `--version`
+
+**Answer:** `--endpoint-url`
+
+<img src="./images/6q4.png">
 
 
 ## Make input and output paths configurable
@@ -194,6 +213,9 @@ Let's modify our `read_data` function:
 - otherwise use the usual way
 
 
+<img src="./images/6q5.png">
+
+
 ## Q5. Creating test data
 
 Now let's create `integration_test.py`
@@ -231,6 +253,10 @@ the file. Otherwise the size may be different depending on the OS,
 engine and compression. Even if you use this exact snippet, the size
 of your dataframe may still be a bit off. Just select the closest option.
 
+**Answer:** 3620
+
+<img src="./images/6q5.png">
+
 
 ## Q6. Finish the integration test
 
@@ -256,6 +282,11 @@ What's the sum of predicted durations for the test dataframe?
 * 36.28
 * 69.28
 * 81.08
+
+
+**Answer:** 13.08
+
+<img src="./images/6q6.png">
 
 
 ## Running the test (ungraded)
