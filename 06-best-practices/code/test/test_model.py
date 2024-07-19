@@ -1,6 +1,6 @@
 from pathlib import Path
 
-import model
+import test.model as model
 
 
 def read_text(file):
@@ -22,7 +22,7 @@ def test_base64_decode():
         },
         "ride_id": 256,
     }
-
+    print('shape of df: ', len(actual_result))
     assert actual_result == expected_result
 
 
