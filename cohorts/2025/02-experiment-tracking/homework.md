@@ -18,7 +18,7 @@ What's the version that you have?
 
 ## Q2. Download and preprocess the data
 
-We'll use the Green Taxi Trip Records dataset to predict the duration of each trip. 
+We'll use the Yellow Taxi Trip Records dataset to predict the duration of each trip. 
 
 Download the data for January, February and March 2023 in parquet format from [here](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
 
@@ -137,5 +137,5 @@ What is the test RMSE of the best model?
 
 ## Submit the results
 
-* Submit your results here: https://courses.datatalks.club/mlops-zoomcamp-2024/homework/hw2
+* Submit your results here: https://courses.datatalks.club/mlops-zoomcamp-2025/homework/hw2
 * If your answer doesn't match options exactly, select the closest one
